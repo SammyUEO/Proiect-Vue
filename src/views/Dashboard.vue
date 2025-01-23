@@ -3,17 +3,13 @@
   <div class="bg-gray-200 min-h-screen p-6">
    
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-      <!-- Profile -->
       <ProfileCard
         profileImage="/images/eu.jpg"
         fullName="Samuel Marian"
         email="samuel.marian@gmail.com"
       />
-      <!-- Orders -->
       <OrderList />
-      <!-- Activity Log -->
       <ActivityLog />
-      <!-- Settings -->
       <SettingsCard />
     </div>
     

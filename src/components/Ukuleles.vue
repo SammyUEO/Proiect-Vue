@@ -72,5 +72,4 @@ export default {
 </script>
 
 <style scoped>
-/* Adaugă stiluri personalizate aici dacă e necesar */
 </style>

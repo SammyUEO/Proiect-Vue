@@ -66,7 +66,6 @@
       </span>
     </button>
 
-    <!-- Coșul de cumpărături (popup) -->
     <div v-if="showCart" class="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 bg-opacity-50 z-10">
       <div class="absolute top-1/4 left-1/2 transform -translate-x-1/2 p-6 bg-white rounded-lg shadow-lg w-96">
         <h3 class="font-bold text-lg mb-4">Shopping Cart</h3>
@@ -77,7 +76,6 @@
               <p>{{ item.name }} - {{ item.price }} RON</p>
               <p class="text-sm text-gray-600">{{ item.description }}</p>
             </div>
-            <!-- Buton de eliminare din coș -->
             <button 
               class="ml-4 bg-red-500 text-white p-2 rounded-full hover:bg-red-600"
               @click="removeFromCart(index)"
@@ -135,7 +133,7 @@ export default {
       maxPrice: '',
       searchQuery: '',
       cart: [],
-      showCart: false, // To toggle the cart visibility
+      showCart: false, 
     };
   },
   computed: {
@@ -154,10 +152,8 @@ export default {
   },
   methods: {
     applySearch() {
-      // Filtering is done automatically in the computed property `filteredInstruments`
     },
     applyFilters() {
-      // Filtrarea se face automat în computed property `filteredInstruments`
     },
     handleInstrumentSelect(instrument) {
       alert(`You selected: ${instrument.name}`);
@@ -167,17 +163,17 @@ export default {
       alert(`${instrument.name} added to cart`);
     },
     toggleCart() {
-      this.showCart = !this.showCart; // Toggle cart visibility
+      this.showCart = !this.showCart; 
     },
     closeCart() {
-      this.showCart = false; // Close the cart
+      this.showCart = false; 
     },
     removeFromCart(index) {
-      this.cart.splice(index, 1); // Remove item from cart
+      this.cart.splice(index, 1); 
     },
     checkout() {
       alert('Proceeding to checkout...');
-      this.cart = []; // Empty the cart after checkout
+      this.cart = []; 
       this.showCart = false;
     }
   }
@@ -185,7 +181,6 @@ export default {
 </script>
 
 <style scoped>
-/* Optional custom styles for cart button */
 .bi-cart {
   font-size: 24px;
 }
@@ -194,7 +189,6 @@ export default {
   font-size: 16px;
 }
 
-/* Indicator for cart count */
 button span {
   position: absolute;
   top: -5px;

@@ -60,7 +60,6 @@
   </script>
   
   <style scoped>
-  /* Optional custom styles for cart */
   .bi-trash {
     font-size: 16px;
   }

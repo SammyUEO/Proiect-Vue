@@ -17,8 +17,7 @@ footer {
   width: 100%;
 }
 
-/* Reducerea padding-ului și font-size-ului */
 footer p {
-  font-size: 0.875rem; /* Micșorează font-ul */
+  font-size: 0.875rem; 
 }
 </style>

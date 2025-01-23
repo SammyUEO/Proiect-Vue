@@ -78,10 +78,9 @@ export default {
   },
   methods: {
     handleSubmit() {
-      // Logica de autentificare simplificată (fără server)
+    
       if (this.email === 'user@example.com' && this.password === 'password') {
         alert('Successfully signed in!');
-        // Redirecționare către dashboard sau altă pagină
       } else {
         this.errorMessage = 'Invalid email or password.';
       }
@@ -91,5 +90,4 @@ export default {
 </script>
 
 <style scoped>
-/* Optional custom styles for the form */
 </style>

@@ -5,7 +5,6 @@
     <div class="p-8">
       <h1 class="text-3xl font-bold mb-4">Electric Guitars</h1>
 
-      <!-- Electric Guitar Products -->
       <div class="grid grid-cols-3 gap-4">
         <InstrumentCard
           v-for="(electric, index) in electricGuitars"
@@ -18,11 +17,9 @@
         />
       </div>
 
-      <!-- Cart Component -->
       <Cart v-if="cartVisible" :cart="cart" @remove-from-cart="removeFromCart" @close-cart="toggleCart" />
     </div>
 
-    <!-- Footer -->
     <Footer />
   </div>
 </template>
@@ -72,5 +69,4 @@ export default {
 </script>
 
 <style scoped>
-/* Adaugă stiluri personalizate aici dacă e necesar */
 </style>

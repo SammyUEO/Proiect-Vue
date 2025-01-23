@@ -1,10 +1,8 @@
 <template>
   <div>
-    <!-- Navbar -->
-    <Navbar />
+=    <Navbar />
 
-    <!-- Background Section with Welcome Text -->
-    <div
+=    <div
       class="relative w-full h-screen bg-cover bg-center"
       :style="{ backgroundImage: `url('/images/home.jpeg')` }"
     >
@@ -81,8 +79,7 @@
     </section>
     
 
-    <!-- Footer -->
-    <Footer />
+=    <Footer />
   </div>
 </template>
 
@@ -107,12 +104,10 @@ export default {
 </script>
 
 <style scoped>
-/* Asigură-te că imaginea acoperă întregul ecran */
 .bg-cover {
   background-size: cover;
 }
 
-/* Săgeata de scroll */
 .bi-arrow-down-circle {
   transition: transform 0.3s ease;
 }
@@ -121,7 +116,6 @@ export default {
   transform: scale(1.2);
 }
 
-/* Spațiu între secțiuni */
 section {
   max-width: 1200px;
   margin: auto;

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <!-- Banner Section -->
+    
     <Banner />
 
-    <!-- Sign Up Form -->
+    
     <SignUpForm />
   </div>
 </template>
@@ -15,11 +15,11 @@ import Banner from '../components/Banner.vue';
 export default {
   components: {
     SignUpForm,
-    Banner,  // Adăugăm componenta Banner aici
+    Banner,  
   },
 };
 </script>
 
 <style scoped>
-/* Optional custom styles for the Sign Up page */
+
 </style>

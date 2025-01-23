@@ -59,7 +59,6 @@ export default {
   },
   methods: {
     handleReset() {
-      // Logica de resetare parolă simplificată (fără server)
       if (this.email === 'user@example.com') {
         this.message = 'Password reset link has been sent to your email.';
       } else {
@@ -71,5 +70,4 @@ export default {
 </script>
 
 <style scoped>
-/* Optional custom styles for the reset password form */
 </style>

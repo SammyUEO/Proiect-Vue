@@ -29,7 +29,7 @@
     props: {
       profileImage: {
         type: String,
-        default: '/images/default-profile.png', // Default image
+        default: '/images/default-profile.png', 
       },
       fullName: {
         type: String,

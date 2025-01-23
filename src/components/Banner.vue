@@ -1,4 +1,3 @@
-<!-- src/components/Banner.vue -->
 <template>
     <div
       class="relative w-full h-72 bg-cover bg-center"
@@ -22,7 +21,6 @@
   </script>
   
   <style scoped>
-  /* Optional custom styles for the banner */
   .bg-cover {
     background-size: cover;
   }

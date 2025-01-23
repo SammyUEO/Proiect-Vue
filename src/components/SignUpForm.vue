@@ -86,18 +86,15 @@
     },
     methods: {
       handleSignUp() {
-        // Verificare dacă parolele se potrivesc
         if (this.password !== this.confirmPassword) {
           this.errorMessage = 'Passwords do not match.';
           this.successMessage = '';
           return;
         }
   
-        // Logica de creare a contului simplificată (fără server)
         if (this.email && this.password) {
           this.successMessage = 'Account created successfully! Please sign in.';
           this.errorMessage = '';
-          // Poți adăuga redirecționare sau alte acțiuni, de exemplu, să resetezi câmpurile
         } else {
           this.errorMessage = 'Please fill in all fields.';
           this.successMessage = '';
@@ -108,6 +105,5 @@
   </script>
   
   <style scoped>
-  /* Optional custom styles for the sign-up form */
   </style>
   
