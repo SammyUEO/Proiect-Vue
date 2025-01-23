@@ -1,8 +1,8 @@
 <template>
   <div>
-=    <Navbar />
+   <Navbar />
 
-=    <div
+    <div
       class="relative w-full h-screen bg-cover bg-center"
       :style="{ backgroundImage: `url('/images/home.jpeg')` }"
     >
